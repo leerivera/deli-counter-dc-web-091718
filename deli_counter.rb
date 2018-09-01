@@ -12,6 +12,7 @@ def line(array)
   puts "#{message}"
   end 
 end 
+
 def take_a_number(array, name)
   array.push(name)
   position = array.index(name)
