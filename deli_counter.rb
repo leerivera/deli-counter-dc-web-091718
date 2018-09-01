@@ -1,8 +1,18 @@
 # Write your code here.
-def line(num)
-  if num == 0 
-    "There is no one in line."
+katz_deli = []
+def line(array) 
+  if array.length == 0 
+    puts "The line is currently empty."
   else 
-    "You are number 1 in line"
-    puts line
-  end
+    message = "The line is currently:"
+    
+  array.each_with_index do |value, index| 
+    message += " #{index.to_i+1}. #{value}"
+  end 
+  puts "#{message}"
+  end 
+end 
+    
+ 
+  
+ 
